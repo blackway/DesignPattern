@@ -10,6 +10,17 @@ public class FactoryPatternDemo {
         //call craw method of Circle
         shape1.draw();
         
+        //get an object of Rectangle and call its draw method.
+        Shape shape2 = shapeFactory.getShape("RECTANGLE");
+
+        //call draw method of Rectangle
+        shape2.draw();
+
+        //get an object of Square and call its draw method.
+        Shape shape3 = shapeFactory.getShape("SQUARE");
+
+        //call draw method of Square
+        shape3.draw();
     }
    
 }
